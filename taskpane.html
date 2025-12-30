@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSL Proposal Manager"</title>
+	
+	<!-- OBLIGATOIRE POUR LES ADD-INS OFFICE -->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+	
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+			background-color: #6C9F9F;
+        }
+        .form-group {
+            margin-bottom: 1px;
+        }
+		h2 {
+			font-size: 1.1em;  
+		}
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+			background-color: #E8F0FE;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #335659;
+            color: white;
+            border: none;
+            padding: 7px 60px;
+            border-radius: 0px;
+            cursor: pointer;
+			margin-top: 30px; /* Décalage vers le bas */
+        }
+        button:hover {
+            background-color: #106ebe;
+        }
+    </style>
+	
+</head>
+<body>
+    <h2>Connexion à KSL</h2>
+	
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="login">Login :</label>
+            <input type="text" id="login" name="login" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <button type="button" id="btnDemanderReponse" class="ms-Button">
+            <span class="ms-Button-label">S'IDENTIFIER</span>
+        </button>
+    </form>
+    <script src="taskpane.js"></script>
+</body>
+</html>
